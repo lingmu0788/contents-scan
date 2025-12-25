@@ -1,0 +1,31 @@
+# 仮想環境
+venv/
+env/
+
+# 環境変数ファイル（認証情報を含むため絶対にコミットしない）
+.env
+.env.local
+
+# Pythonキャッシュ
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ログファイル
+*.log
+automation_*.log
+
+# 進捗ファイル
+progress.json
+
+# OS
+.DS_Store
+Thumbs.db
+

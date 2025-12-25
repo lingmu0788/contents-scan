@@ -1,0 +1,10 @@
+﻿.env
+__pycache__/
+*.pyc
+progress.json
+automation_*.log
+section_list_*.csv
+content_list_*.csv
+*.csv
+venv/
+.DS_Store
