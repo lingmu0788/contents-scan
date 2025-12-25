@@ -173,11 +173,51 @@ python3 main.py
 
 ---
 
+## GitHub での確認方法
+
+### 1. リポジトリにアクセス
+```
+https://github.com/lingmu0788/contents-scan
+```
+
+### 2. ファイル一覧から確認
+トップページで以下のファイルが表示されます：
+- MAC_SETUP.md - Mac用セットアップガイド
+- CHAT_HISTORY.md - チャット履歴（このファイル）
+- README.md - プロジェクト説明
+- QUICK_START.md - クイックスタート
+
+### 3. 各ファイルをクリックして内容確認
+例：
+- MAC_SETUP.md: https://github.com/lingmu0788/contents-scan/blob/main/MAC_SETUP.md
+- CHAT_HISTORY.md: https://github.com/lingmu0788/contents-scan/blob/main/CHAT_HISTORY.md
+
+### 4. コミット履歴で更新内容を確認
+```
+https://github.com/lingmu0788/contents-scan/commits/main
+```
+
+---
+
+## 追加チャット内容（2025-12-25 後半）
+
+### GitHub リポジトリへの追加ファイル
+1. **MAC_SETUP.md** - Macでのセットアップ完全ガイド
+2. **CHAT_HISTORY.md** - プロジェクト概要とチャット履歴
+
+### GitHub での確認手順
+- Windows 側から `git push` でファイルをアップロード
+- ブラウザで https://github.com/lingmu0788/contents-scan にアクセス
+- ファイル一覧からドキュメント確認可能
+- どのマシンからでも最新情報を参照可能
+
+---
+
 ## チャット開始日時
 2025-12-25
 
 ## 最終更新日時
-2025-12-25（チャット終了時刻）
+2025-12-25（完全終了時刻）
 
 ---
 
