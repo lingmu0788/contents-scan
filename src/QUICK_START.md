@@ -4,11 +4,44 @@ Contents Engine マスタープログラム自動化ツールの使い方
 
 ## 📋 セットアップ（初回のみ）
 
+### macOS/Linux ユーザー向け簡単実行方法（推奨）
+
+**プロジェクトルート** = `/Users/suzukishinji/projects/contents-scan/` で以下のコマンドを実行するだけ：
+
+```bash
+cd /Users/suzukishinji/projects/contents-scan
+./run.sh
+```
+
+このスクリプトが自動的に以下を実行します：
+- ✅ src ディレクトリに移動
+- ✅ 仮想環境を有効化
+- ✅ main.py を実行
+
+**ディレクトリ構造：**
+```
+/Users/suzukishinji/projects/contents-scan/  ← プロジェクトルート
+├── run.sh  ← ここから実行
+├── src/
+│   ├── main.py
+│   └── venv/
+└── その他
+```
+
+---
+
 ### ステップ1：.envファイルを作成
 
+**Windows の場合：**
 ```powershell
 cd C:\Users\SS9212\projects\contents-scan\src
 Copy-Item .env.example .env
+```
+
+**macOS/Linux の場合：**
+```bash
+cd /Users/suzukishinji/projects/contents-scan/src
+cp .env.example .env
 ```
 
 ### ステップ2：.envファイルを編集
@@ -24,11 +57,32 @@ PASSWORD=your_actual_password
 
 ### ステップ3：仮想環境を有効化
 
+**Windows の場合：**
 ```powershell
+cd C:\Users\SS9212\projects\contents-scan\src
 .\venv\Scripts\Activate.ps1
 ```
 
+**macOS/Linux の場合：**
+```bash
+cd /Users/suzukishinji/projects/contents-scan/src
+source venv/bin/activate
+```
+
 プロンプトが `(venv)` で始まることを確認してください。
+
+#### 👍 推奨：run.sh を使う方法（macOS/Linux）
+
+プロジェクトルート（`/Users/suzukishinji/projects/contents-scan/`）で実行：
+
+```bash
+./run.sh
+```
+
+このスクリプトが自動的に以下を実行します：
+- ✅ src ディレクトリに移動
+- ✅ 仮想環境を有効化
+- ✅ main.py を実行
 
 ---
 
@@ -36,8 +90,14 @@ PASSWORD=your_actual_password
 
 **まずはテスト版で動作確認しましょう！**
 
+**Windows の場合：**
 ```powershell
 python main_test.py
+```
+
+**macOS/Linux の場合：**
+```bash
+./run.sh  # またはソースコードから cd src && source venv/bin/activate && python main_test.py
 ```
 
 ### テスト版で何が起こるか？
@@ -64,8 +124,14 @@ python main_test.py
 
 テストが成功したら、本番実行：
 
+**Windows の場合：**
 ```powershell
 python main.py
+```
+
+**macOS/Linux の場合：**
+```bash
+./run.sh
 ```
 
 ### 本番実行で何が起こるか？
